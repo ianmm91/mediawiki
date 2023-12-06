@@ -1,0 +1,13 @@
+/docs/
+/a11y/
+/node_modules/
+/vendor
+/composer.lock
+/composer.phar
+.DS_Store
+/.eslintcache
+/.stylelintcache
+/tests/selenium/log
+/tmp
+/.resolve-less-imports
+/.phpunit.result.cache

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"..."
+		]
+	},
+	"skinname-example": "{{optional}}",
+	"example-skin-desc": "{{desc|what=skin|name=Example|url=https://www.mediawiki.org/wiki/Skin:Example}}",
+	"example-no-categories": "Message to show when no categories available"
+}

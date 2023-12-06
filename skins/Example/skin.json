@@ -1,0 +1,89 @@
+{
+	"name": "Example",
+	"version": "1.0.0",
+	"author": [
+		"..."
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:Example",
+	"descriptionmsg": "example-skin-desc",
+	"namemsg": "skinname-example",
+	"license-name": "CC0-1.0",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"ValidSkinNames": {
+		"example": {
+			"class": "SkinMustache",
+			"args": [
+				{
+					"name": "example",
+					"responsive": true,
+					"messages": [
+						"example-no-categories",
+						"sitetitle",
+						"search",
+						"otherlanguages",
+						"tagline",
+						"navigation-heading"
+					],
+					"styles": [
+						"mediawiki.ui.icon",
+						"mediawiki.ui.button",
+						"skins.example.styles"
+					],
+					"scripts": [
+						"skins.example"
+					]
+				}
+			]
+		}
+	},
+	"MessagesDirs": {
+		"Example": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.example.styles": {
+			"class": "ResourceLoaderSkinModule",
+			"features": {
+				"normalize": true,
+				"elements": true,
+				"content-tables": true,
+				"content-links": false,
+				"content-media": false,
+				"content-links-external": false,
+				"interface-message-box": true,
+				"interface-category": false,
+				"toc": true
+			},
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"styles": [
+				"resources/skin.less"
+			]
+		},
+		"skins.example": {
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"packageFiles": [
+				"resources/skin.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Example"
+	},
+	"ResourceModuleSkinStyles": {
+		"example": {
+			"+ext.echo.styles.badge": "resources/extensions/echo.styles.badge.less"
+		}
+	},
+	"manifest_version": 2
+}
